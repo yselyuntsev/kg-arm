@@ -1,0 +1,43 @@
+.r-card {
+  background-color: #FFFFFF;
+  border: 1px solid #e7e9ed;
+  border-radius: 2px;
+  display: block;
+  overflow-y: auto;
+  margin: .5rem;
+  max-height: calc(100vh - 13rem);
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(72, 72, 72, .1);
+
+  &--scroll {
+    max-height: 18rem;
+  }
+  
+  
+  &--person {
+    max-height: 15rem;
+  }
+  
+  &--logs {
+    max-height: calc(100vh - 9rem);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  & ::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+  }
+
+  & ::-webkit-scrollbar {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  & ::-webkit-scrollbar-thumb {
+    background-color: #0747A6;
+  }
+}

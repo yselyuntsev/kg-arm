@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #E0E0E0;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0747A6;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #50586c;
+  min-height: 100%;
+  background-color: #fafafa;
+  user-select: none;
+}
+
+.main {
+  display: flex;
+  padding-left: 15rem;
+
+  &.login {
+    padding-left: 0;
+  }
+}
+
+.splash {
+  background-color: rgba(0, 0, 0, .4);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+}
+
+.r-nav {
+  display: flex;
+  align-items: center;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active, .slide-leave-active {
+  transform: translateX(0);
+}
+
+.slide-enter, .slide-leave-to {
+  transform: translateX(100%);
+}
+
+.push-enter-active, .push-leave-active {
+  transition: .16s transform ease-in-out;
+}
+
+.push-enter, .push-leave-to {
+  transform: translateY(-3rem);
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/material.woff2') format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
+  margin-right: .5em;
+}
+
+#arm, #info, #configuration, #logs {
+  width: 100%;
+}

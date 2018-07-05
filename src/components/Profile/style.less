@@ -1,0 +1,49 @@
+.r-profile {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 2rem;
+
+  &__photo {
+    display: inline-flex;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
+
+  &__extra {
+    margin-left: 4rem;
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    margin-bottom: .5rem;
+  }
+
+  &__description {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+
+  &.small {
+    padding: 1.5rem;
+
+    .r-profile__photo {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .r-profile__extra {
+      margin-left: 2rem;
+    }
+
+    .r-profile__title {
+      font-size: 1.5rem;
+      margin-bottom: .25rem;
+    }
+
+    .r-profile__description {
+      font-size: 1rem;
+    }
+  }
+}
