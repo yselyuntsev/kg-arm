@@ -1,4 +1,4 @@
-# SKUD Server
+# SKUD Arm
 
 > SPA Vue.js | Автоматизированное рабочее место
 
